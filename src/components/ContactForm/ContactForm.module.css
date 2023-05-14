@@ -1,0 +1,76 @@
+.formBox {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 25px; */
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.16;
+}
+.labelText {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 8px;
+  color: #000;
+}
+.input {
+  width: 400px;
+  padding-top: 11px;
+  padding-left: 22px;
+  padding-bottom: 11px;
+
+  border: 2px solid rgba(255, 83, 20, 0.5);
+  border-radius: 18px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  color: rgba(109, 108, 108, 0.8);
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  border-color: #ff5314;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btnAdd {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #ff5314;
+  border-radius: 18px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: #ff5314;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+}
+
+.btnAddIcon {
+  margin-right: 8px;
+}
+
+.btnAddText {
+  text-align: center;
+}
+
+.btnAdd:hover,
+.btnAdd:focus {
+  background-color: #ff5314;
+  color: #fff;
+}
