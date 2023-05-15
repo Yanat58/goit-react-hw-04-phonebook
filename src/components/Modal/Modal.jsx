@@ -6,11 +6,11 @@ import css from './Modal.module.css';
 const modalRoot = document.querySelector('#modal-root');
 
 export const Modal = ({ onClose, children }) => {
-  // const handleClickBackdrop = e => {
-  //   if (e.target === e.currentTarget) {
-  //     onClose();
-  //   }
-  // };
+  const handleClickBackdrop = e => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
 
   useEffect(() => {
     const handleKeyDown = e => {
@@ -25,7 +25,7 @@ export const Modal = ({ onClose, children }) => {
   }, [onClose]);
 
   return createPortal(
-    <div className={css.modalBackdrop}>
+    <div onClick={handleClickBackdrop} className={css.modalBackdrop}>
       <div className={css.modalContent}>{children}</div>
     </div>,
     modalRoot
